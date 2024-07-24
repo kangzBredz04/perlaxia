@@ -49,18 +49,23 @@ nav ul li a {
     border-radius: 5px;
 }
 
-nav ul li a:hover, nav ul li.active a {
+nav ul li a:hover {
     background-color: #f4c20d;
     color: #333;
 }
 
+nav ul li.active a {
+    background-color: #f4c20d;
+    color: #333;
+    border-radius: 5px;
+}
+
 main {
-    padding-top: 70px; /* Offset for fixed header */
-    margin: 20px;
+    padding-top: 60px; 
 }
 
 .banner {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 300px;
     overflow: hidden;
@@ -75,14 +80,15 @@ main {
 .content {
     display: flex;
     gap: 20px;
+    background-color: #f2f2f2;
 }
 
 aside {
     flex: 1;
     background-color: #f9f9f9;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* border-radius: 8px; */
 }
 
 aside h3 {
@@ -100,8 +106,8 @@ article {
     flex: 3;
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* border-radius: 8px; */
 }
 
 article h2 {
@@ -109,7 +115,7 @@ article h2 {
 }
 
 article img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-top: 10px;
     border-radius: 4px;
